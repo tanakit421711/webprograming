@@ -1,0 +1,23 @@
+{
+  "name": "webprograming",
+  "version": "1.0.0",
+  "description": "จักรกฤษ สุขาจารย์\r  มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา พิษณุโลก",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garfieldza34/webprograming.git"
+  },
+  "keywords": [],
+  "author": "Jakkrit Sukajan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garfieldza34/webprograming/issues"
+  },
+  "homepage": "https://github.com/garfieldza34/webprograming#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
