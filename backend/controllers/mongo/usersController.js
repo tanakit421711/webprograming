@@ -1,6 +1,6 @@
 const users = require("../../models/mongo/users");
 
-// R-Read อ่านข้อมูล
+// R-Read get
 exports.index = async (req, res, next) => {
 
     let data = await users.find();
@@ -9,7 +9,7 @@ exports.index = async (req, res, next) => {
  
 };
 
-//C-Create เพิ่มข้อมูล
+//C-Create post
 exports.insert = async (req,res,next) => {
     
     let data = new users({
@@ -24,9 +24,9 @@ email: req.body.email
 
 
 };
-//update ข้อมูล
+//update put
 exports.update = async (req, res , next) => {
-    const id = "60ebbb81309b601da4011b91";
+    const id = "60ebbd3d72ef2178351e9a39";
     const data = {
         username: "Nostria",
         email: "nostria@gmail.com"
@@ -51,9 +51,9 @@ exports.update = async (req, res , next) => {
     }    
 
 };
-// Delete ลบข้อมูล
+// Delete   ลบ
 exports.delete = async (req, res, next) => {
-    const id = "60ebc26265b0e319f4473ed0"
+    const id = "60ebbd0572ef2178351e9a37"
     const data = await users.deleteOne(
         {_id: id }
     );
