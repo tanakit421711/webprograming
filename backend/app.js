@@ -10,10 +10,11 @@ const mongoose = require("mongoose");
 
 // mongo
 const usersRouter_mongo = require("./routes/mongo/users");
+const customersRouter_mongo = require("./routes/mongo/customers");
 
 const app = express();
 
-mongoose.connect("mongodb+srv://admin:gf0877374410@cluster0.dz5xb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://admin:admin@cluster0.yu9au.mongodb.net/rmutl?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
@@ -31,5 +32,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // mongo
 app.use("/mongo", usersRouter_mongo);
+app.use("/mongo", customersRouter_mongo);
 
 module.exports = app;
