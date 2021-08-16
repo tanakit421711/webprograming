@@ -33,14 +33,14 @@ exports.insert = async (req,res,next) => {
 };
 //update ข้อมูล
 exports.update = async (req, res , next) => {
-    const id = "61191aa07e2e7c18243cc0d1";
+    const id = "61191824405bf23d04f7949a";
     const data = {
-        customerID :"42171",
+        customerID :"421711111111",
         customerTitleName :"mr",
-        customerFirstName :"tanakitqweqeq",
-        customerLastName :"keawpinit",
-        customerAddress :"19/20",
-        customerTel :"0946013030",
+        customerFirstName :"tanak111itqweqeq",
+        customerLastName :"keaw11pinit",
+        customerAddress :"19/2110",
+        customerTel :"094601301130",
         customerEmail :"tanakit42171@gmail.com",
         customerUserName :"tanakit42171",
         customerPassword :"0946013030",
